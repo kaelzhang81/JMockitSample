@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: com.agilean.kata.FooClassTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec <<< FAILURE!
+com.agilean.kata.FooClassTest.testFooClass_CallMethodMsg_ShouldBeOK()  Time elapsed: 0.03 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.agilean.kata.FooClassTest.testFooClass_CallMethodMsg_ShouldBeOK(FooClassTest.java:39)
+
+com.agilean.kata.FooClassTest.testFooClass_CallDoSth_ShouldBeOK()  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.agilean.kata.FooClassTest$3.<init>(FooClassTest.java:52)
+	at com.agilean.kata.FooClassTest.testFooClass_CallDoSth_ShouldBeOK(FooClassTest.java:51)
+
+com.agilean.kata.FooClassTest.testFooClass_CallStaticMethod_EqualsMockString()  Time elapsed: 0.018 sec  <<< FAILURE!
+java.lang.AssertionError
+	at mockit.internal.expectations.RecordAndReplayExecution.startVerifications(RecordAndReplayExecution.java:285)
+	at mockit.Verifications.<init>(Verifications.java:60)
+	at mockit.Verifications.<init>(Verifications.java:56)
+	at com.agilean.kata.FooClassTest$5.<init>(FooClassTest.java:75)
+	at com.agilean.kata.FooClassTest.testFooClass_CallStaticMethod_EqualsMockString(FooClassTest.java:75)
+
+com.agilean.kata.FooClassTest.testFooClass_CallFinalMethod_EqualsMockString()  Time elapsed: 0.01 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.agilean.kata.FooClassTest.testFooClass_CallFinalMethod_EqualsMockString(FooClassTest.java:96)
+

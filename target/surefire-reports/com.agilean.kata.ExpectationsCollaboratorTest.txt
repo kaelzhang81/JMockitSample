@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------
+Test set: com.agilean.kata.ExpectationsCollaboratorTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.05 sec <<< FAILURE!
+com.agilean.kata.ExpectationsCollaboratorTest.testMethodForWith_InputWithParams_ShouldBeOK()  Time elapsed: 0.006 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.agilean.kata.ExpectationsCollaboratorTest$3.<init>(ExpectationsCollaboratorTest.java:45)
+	at com.agilean.kata.ExpectationsCollaboratorTest.testMethodForWith_InputWithParams_ShouldBeOK(ExpectationsCollaboratorTest.java:44)
+
+com.agilean.kata.ExpectationsCollaboratorTest.testMethodForNulls_InputNullParams_ShouldBeOK()  Time elapsed: 0.01 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.agilean.kata.ExpectationsCollaboratorTest$5.<init>(ExpectationsCollaboratorTest.java:60)
+	at com.agilean.kata.ExpectationsCollaboratorTest.testMethodForNulls_InputNullParams_ShouldBeOK(ExpectationsCollaboratorTest.java:59)
+
+com.agilean.kata.ExpectationsCollaboratorTest.testMethodForTimes_CallMethodTimes_ShouldBeOK()  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.agilean.kata.ExpectationsCollaboratorTest$7.<init>(ExpectationsCollaboratorTest.java:75)
+	at com.agilean.kata.ExpectationsCollaboratorTest.testMethodForTimes_CallMethodTimes_ShouldBeOK(ExpectationsCollaboratorTest.java:74)
+
+com.agilean.kata.ExpectationsCollaboratorTest.testMethodForWith_CallMethod_ResultAsMockReturns()  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.agilean.kata.ExpectationsCollaboratorTest$9.<init>(ExpectationsCollaboratorTest.java:96)
+	at com.agilean.kata.ExpectationsCollaboratorTest.testMethodForWith_CallMethod_ResultAsMockReturns(ExpectationsCollaboratorTest.java:95)
+
+com.agilean.kata.ExpectationsCollaboratorTest.testMethodForDelegate_CallMethod_ResultAsMockReturns()  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.agilean.kata.ExpectationsCollaboratorTest$10.<init>(ExpectationsCollaboratorTest.java:114)
+	at com.agilean.kata.ExpectationsCollaboratorTest.testMethodForDelegate_CallMethod_ResultAsMockReturns(ExpectationsCollaboratorTest.java:112)
+

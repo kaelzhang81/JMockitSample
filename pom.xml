@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.agilean.arg</groupId>
+    <artifactId>JmockitSample</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+         <dependency>
+             <groupId>org.jmockit</groupId>
+             <artifactId>jmockit</artifactId>
+             <version>1.44</version>
+             <scope>test</scope>
+         </dependency>
+         <dependency>
+             <groupId>org.junit.jupiter</groupId>
+             <artifactId>junit-jupiter-api</artifactId>
+             <version>5.0.3</version>
+             <scope>test</scope>
+         </dependency>
+    </dependencies>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <argLine>
+                        <!-- -javaagent:"${settings.localRepository}"/org/jmockit/jmockit/1.44/jmockit-1.44.jar-->
+                        -javaagent:~/.m2/repository/org/jmockit/jmockit/1.44/jmockit-1.44.jar
+                        <!--jmockit-${jmockit.version}.jar=coverage-->
+                        <!-- coverage properties -->
+                    </argLine>
+                </configuration>
+            </plugin>
+            <!--<plugin>-->
+                <!--<artifactId>maven-surefire-plugin</artifactId>-->
+                <!--<configuration>-->
+                    <!--<systemPropertyVariables>-->
+                        <!--&lt;!&ndash; At least one of the following needs to be set: &ndash;&gt;-->
+                        <!--<coverage-output>html</coverage-output>     &lt;!&ndash; or: html-nocp, serial, serial-append &ndash;&gt;-->
+                        <!--<coverage-metrics>all</coverage-metrics>    &lt;!&ndash; or: line, path, data &ndash;&gt;-->
+                        <!--&lt;!&ndash;<coverage-classes>loaded</coverage-classes> &lt;!&ndash; or a "*" expression for class names &ndash;&gt;&ndash;&gt;-->
+                        <!--&lt;!&ndash; Other properties, if needed: &ndash;&gt;-->
+                        <!--<coverage-outputDir>report</coverage-outputDir>       &lt;!&ndash; default: target/coverage-report &ndash;&gt;-->
+                        <!--<coverage-srcDirs>sources</coverage-srcDirs>          &lt;!&ndash; default: all "src" directories &ndash;&gt;-->
+                        <!--&lt;!&ndash;<coverage-excludes>some.package.*</coverage-excludes> &lt;!&ndash; default: empty &ndash;&gt;&ndash;&gt;-->
+                        <!--<coverage-check>80</coverage-check>                   &lt;!&ndash; default: no checks &ndash;&gt;-->
+                    <!--</systemPropertyVariables>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
+        </plugins>
+    </build>
+</project>

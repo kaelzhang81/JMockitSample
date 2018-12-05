@@ -1,0 +1,6 @@
+
+|squid:S1171#"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿ8Ý¡™Ž÷,
+Jsquid:S3599",Use another way to initialize this instance.(û‡æÂ8Ý¡™Ž÷,
+|squid:S1171"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿ8Ý¡™Ž÷,
+qsquid:S1192"TDefine a constant instead of duplicating this literal "2010-07-22 15:52:55" 3 times.(²ùžc8Ý¡™Ž÷,
+Jsquid:S3599"",Use another way to initialize this instance.(û‡æÂ8Ý¡™Ž÷,

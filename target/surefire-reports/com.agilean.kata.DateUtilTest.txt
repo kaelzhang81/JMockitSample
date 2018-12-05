@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: com.agilean.kata.DateUtilTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.148 sec <<< FAILURE!
+com.agilean.kata.DateUtilTest.testGetCurrentDateStr_MockGetCurrentDateStr_DateStrEquals()  Time elapsed: 0.129 sec  <<< FAILURE!
+java.lang.IllegalArgumentException: Value of type java.util.Date incompatible with return type String of com.agilean.kata.DateUtil#getCurrentDateStr()
+	at mockit.internal.expectations.ReturnTypeConversion.newIncompatibleTypesException(ReturnTypeConversion.java:260)
+	at mockit.internal.expectations.ReturnTypeConversion.getPrimitiveValue(ReturnTypeConversion.java:332)
+	at mockit.internal.expectations.ReturnTypeConversion.addPrimitiveValue(ReturnTypeConversion.java:336)
+	at mockit.internal.expectations.ReturnTypeConversion.addResultFromSingleValue(ReturnTypeConversion.java:248)
+	at mockit.internal.expectations.ReturnTypeConversion.addConvertedValue(ReturnTypeConversion.java:85)
+	at mockit.internal.expectations.Expectation.addResult(Expectation.java:95)
+	at mockit.internal.expectations.RecordPhase.addResult(RecordPhase.java:19)
+	at mockit.internal.expectations.ActiveInvocations.addResult(ActiveInvocations.java:113)
+	at com.agilean.kata.DateUtilTest$1.<init>(DateUtilTest.java:23)
+	at com.agilean.kata.DateUtilTest.testGetCurrentDateStr_MockGetCurrentDateStr_DateStrEquals(DateUtilTest.java:18)
+
